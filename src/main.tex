@@ -18,16 +18,12 @@
 \usepackage{calc}
 \usepackage{amsmath,array}
 \usepackage{epstopdf}
-%\usepackage{morefloats}
 \usepackage{subfig}
 \usepackage{graphicx}
 \usepackage[countmax]{subfloat}
-%\usepackage[]{mcode}                 %% For including programming code
 \usepackage{setspace}
 \usepackage{booktabs}
 \usepackage{graphicx,amsthm,amssymb,amsmath,setspace,units,multirow,longtable,txfonts}
-% For the stupid requirement from graduate school
-\usepackage{ragged2e}
 
 \newcommand{\bx}{\mathbf{x}}
 \newcommand{\by}{\mathbf{y}}
@@ -1964,7 +1960,7 @@ In this example, efficiency can be interpreted from Figure \ref{fig:tanglecube_e
 %                                                                      %
 %----------------------------------------------------------------------%
 
-\chapter{CONCLUSIONS}
+\chapter{\MakeUppercase{CONCLUSIONS}}
 
 \label{chap: conclusions}
 In this work, we propose a novel matched ADI method for solving 3D parabolic interface problems with discontinuous diffusion coefficient and complex interfaces. The newly developed scheme inherits the merits of its ancestor for solving 2D interface problems, while possesses unique features, such as the non-orthogonal local coordinate system for decoupling the jump conditions, two-side estimation of tangential derivative at the interface point, and the capability of handling arbitrary many interface points on one grid line, for solving more challenging 3D problems. Moreover, a new Douglas-Rachford ADI scheme is designed, which minimizes the perturbation terms, in compared with the implicit Euler scheme, and is of first order in time. 
