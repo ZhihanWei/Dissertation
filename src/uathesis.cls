@@ -161,7 +161,7 @@
   \thispagestyle{empty}
   \vspace*{35\p@}
   \begin{center}
-    \begin{doublespace}
+  \begin{doublespace}
     \renewcommand{\and}{\NoCaseChange{\\}}
     \MakeTextUppercase{\@title} \linebreak \linebreak
     by \linebreak

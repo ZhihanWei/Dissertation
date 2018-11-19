@@ -1992,7 +1992,6 @@ with analytical solution (\ref{analytical_eqn_1}) with $a=2$. The source term de
 \hspace{1cm} For variable coefficients, eight methods are proposed as ADI-L1, ADI-L2, LODIE-L1, LODIE-L2, LODCN-L1, LODCN-L2, TS-L1, TS-L2, which are named by a combination of temporal method and spatial method. Three different pairs of variable coefficient are deployed in numerical experiment with different types of analytical solutions. For efficiency, LODIE method are found to be the most efficient one, ADI method is almost same efficient as LODIE, LODCN method is much more expensive than the previous two methods and TS method is the most expensive one. Meanwhile, in spatial, MIB-L1 scheme is found slightly more efficient than MIBL2 method but with a little sacrifice of accuracy. For accuracy, it's interesting to say that there is not much difference between two spatial scheme MIB-L1 and MIB-L2 scheme. In terms of temporal methods, ADI method and TS method are much better than LODIE method and LODCN method. However, TS method is the only method that considered unstable with large time step, specially, TS method with MIB-L2 scheme, all other methods are stable with variable coefficient and various time step and grid size.
 
 \hspace{1cm} Overall, for solving parabolic interface problem, for the sake of its unconditional stability, high accuracy and extreme efficiency, matched ADI is the first choice to be considered regardless of constant diffusion coefficient or variable diffusion coefficient.
-
 \end{flushleft}
 
 %----------------------------------------------------------------------%
@@ -2000,30 +1999,31 @@ with analytical solution (\ref{analytical_eqn_1}) with $a=2$. The source term de
 %                             Reference                                %
 %                                                                      %
 %----------------------------------------------------------------------%
+\begin{singlespace}	
+\cleardoublepage
 \addcontentsline{toc}{chapter}{REFERENCES}
 \renewcommand{\bibname}{REFERENCES}
 \bibliographystyle{acm}
 \bibliography{mybib}
-
-\iffalse
-\addcontentsline{toc}{chapter}{REFERENCES}
-\bibliographystyle{plain}
-\bibliography{thesis-template}
-\begin{singlespace}
-\bibliography{stability}
-\bibliographystyle{abbrv}
-\label{bib}
 \end{singlespace}
 
-\begin{description}
-	\item AKAIKE, H. (1973). Information theory and an extension of the maximum likelihood principle. In \emph{Second International Symposium on Information Theory}. Edited by Petrov,  B. N. and Csaki, F., 267--281. Budapest: Akademiai Kiado.
-	
-	\item Bottou, L. (2012). Stochastic gradient descent tricks. In \emph{Neural Networks: Tricks of the
-	Trade}. Edited by Montavon, G., Orr, G., and Muller, K.-R., 421--436. Berlin Heidelberg: Springer.
-	
-\end{description}
-\newpage
-\fi
+%\iffalse
+%\addcontentsline{toc}{chapter}{REFERENCES}
+%\bibliographystyle{plain}
+%\bibliography{thesis-template}
+%\begin{singlespace}
+%\bibliography{stability}
+%\bibliographystyle{abbrv}
+%\label{bib}
+%\end{singlespace}
+
+%\begin{description}
+%	\item AKAIKE, H. (1973). Information theory and an extension of the maximum likelihood principle. In \emph{Second International Symposium on Information Theory}. Edited by Petrov,  B. N. and Csaki, F., 267--281. Budapest: Akademiai Kiado.
+%	\item Bottou, L. (2012). Stochastic gradient descent tricks. In \emph{Neural Networks: Tricks of the
+%	Trade}. Edited by Montavon, G., Orr, G., and Muller, K.-R., 421--436. Berlin Heidelberg: Springer.	
+%\end{description}
+%\newpage
+%\fi
 
 %%%%%%%%%%%%%%%%%%APPENDIX%%%%%%%%%%%%%%%%%%%%%%
 %\addcontentsline{toc}{chapter}{APPENDIX}
